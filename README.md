@@ -20,7 +20,7 @@ This is a single model full CRUD full app for contacts using Python and Django, 
 | `/contacts/:id`  | Show  |
 | `/contacts/new`  | Create  |
 | `/contacts/:id/edit`  | Edit  |
-| `/contacts/id/delete`  | Delete (action only, no view)  |
+| `/contacts/:id/delete`  | Delete (action only, no view)  |
 
 ## System Requirements 
 
