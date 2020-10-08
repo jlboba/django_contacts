@@ -1,5 +1,6 @@
 <!-- tunr/templates/tunr/artist_form.html -->
 {% extends 'contacts/base.html' %} {% block content %}
+<a href="{% url 'contact_list' %}">Go back to contacts</a>
 <h2>New Contact</h2>
 <form method="POST">
   {% csrf_token %} {{ form.as_p }}

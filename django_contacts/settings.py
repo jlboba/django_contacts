@@ -32,7 +32,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'shielded-eyrie-36463.herokuapp.com']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
