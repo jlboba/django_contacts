@@ -85,13 +85,15 @@ To build your app, we're going to be building a virtual environment. In order to
         ![](https://imgur.com/Xn0vzRp.png) 
         
       <p></details>
-1. Go to `localhost:8000/admin` and log in using the username/password you created when making the superuser 
-1. You should now be able to add / delete / edit / read contacts directly from your browser!
-    - <details><summary>See an example of how to use the admin panel</summary><p>
+1. You should be able to add data by using the already set up form
+    - EXTRA: You can also use the built in django admin panel:
+        1. Go to `localhost:8000/admin` and log in using the username/password you created when making the superuser 
+        1. You should now be able to add / delete / edit / read contacts directly from your browser!
+            - <details><summary>See an example of how to use the admin panel</summary><p>
     
-        ![](https://imgur.com/EROfINH.gif)
+                ![](https://imgur.com/EROfINH.gif)
     
-    </p></details>
+            </p></details>
     
 ---
 
@@ -139,7 +141,8 @@ To build your app, we're going to be building a virtual environment. In order to
 
 1. After the migrations finish, you should now be able to open the heroku app in your browser!
 1. Remember that your heroku database is separate from your local database, so there should not be any data on the first load. 
-    - You can add data by logging in to `/admin` with the heroku superuser you created
+    - You can add data by just using the create route / form already there
+    - Additionally, you can also log in to `/admin` with the heroku superuser you created
     
 ---
 
