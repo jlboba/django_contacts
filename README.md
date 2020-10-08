@@ -142,3 +142,19 @@ To build your app, we're going to be building a virtual environment. In order to
     - You can add data by logging in to `/admin` with the heroku superuser you created
     
 ---
+
+## Resources 
+
+Django is a fairly opinionated frameworks meaning there are right ways to do things. If you plan on making many changes to this template, I would recommend looking at their documentation: 
+
+- [Django Documentation](https://docs.djangoproject.com/en/3.1/)
+    - Particular pages you may want to look at: 
+        - [Making Queries (Django's built in ORM)](https://docs.djangoproject.com/en/3.1/topics/db/queries/#)
+        - [Models](https://docs.djangoproject.com/en/3.1/topics/db/models/)
+        - [Migrations](https://docs.djangoproject.com/en/3.1/topics/migrations/)
+        - [URLs Config](https://docs.djangoproject.com/en/3.1/topics/http/urls/)
+        - [Templates](https://docs.djangoproject.com/en/3.1/topics/templates/)
+        - [The Django Templating Language](https://docs.djangoproject.com/en/3.1/ref/templates/language/)
+        - [Writing Views](https://docs.djangoproject.com/en/3.1/topics/http/views/)
+        - [Class Based Views](https://docs.djangoproject.com/en/3.1/topics/class-based-views/)
+        
