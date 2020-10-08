@@ -55,3 +55,40 @@ To build your app, we're going to be building a virtual environment. In order to
 </p></details>
 
 ---
+
+## Get Set Up Locally 
+
+### On your Browser 
+
+1. Fork this repository to your account 
+
+### In your Terminal 
+
+1. Clone **your fork** of the repo onto your computer anywhere that is not a git repo
+1. `cd` into the repo 
+1. Touch a `.env` into the root of your project and add a SECRET_KEY value. See the .env.sample file for an example
+1. Install all the required packages by running: `pipenv install` 
+1. Activate the virtual environment by running: `pipenv shell`
+    - NOTE: To exit the shell gracefully whenever you're done working, use `exit`
+1. Create the `contacts` psql database and user by running the following while in the pipenv shell: `psql -U postgres -f settings.sql` 
+    - You can find the database name and username/password inside the settings.sql file
+1. Apply the migrations by running the following while in the pipenv shell: `python3 manage.py migrate`
+1. Make a superuser for your app, this will allow you to work directly with your database on the browser without having to use Postman 
+    - In the pipenv shell, run `python3 manage.py createsuperuser` and follow the instructions
+1. Start the Django server by running the following inside the pipenv shell: `python3 manage.py runserver`  
+
+### On your Browser 
+
+1. Go to `localhost:8000/`. You should see a very plain contacts index page, like so: 
+![](https://imgur.com/V6SvjaX.png) 
+1. Go to `localhost:8000/admin` and log in using the username/password you created when making the superuser 
+1. You should now be able to add / delete / edit / read contacts directly from your browser!
+    - <details><summary>See an example of how to use the admin panel</summary><p>
+    
+        ![](https://imgur.com/EROfINH.gif)
+    
+    </p></details>
+    
+---
+
+
