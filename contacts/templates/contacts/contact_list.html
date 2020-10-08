@@ -1,0 +1,12 @@
+<!-- including the base.html as a boilerplate -->
+{% extends 'contacts/base.html' %} {% block content %}
+<!-- contact list content -->
+<h2>Contacts <a href="">(+)</a></h2>
+<ul>
+  {% for contact in contacts %}
+  <li>
+    <a href="{% url 'contact_detail' pk=contact.pk %}">{{ contact.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
