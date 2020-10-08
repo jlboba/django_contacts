@@ -95,4 +95,12 @@ To build your app, we're going to be building a virtual environment. In order to
     
 ---
 
+## Making Changes 
 
+### Updating / Creating Models 
+
+1. If you make any changes to the `contacts/models.py` file, you will need to make and run a migration to apply the changes. You can do so by using the following commands while _inside the pipenv shell_
+    1. Make the migration: `python3 manage.py makemigrations` 
+    1. Apply the migration: `python3 manage.py migrate` 
+    
+---
