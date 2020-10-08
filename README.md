@@ -79,8 +79,12 @@ To build your app, we're going to be building a virtual environment. In order to
 
 ### On your Browser 
 
-1. Go to `localhost:8000/`. You should see a very plain contacts index page, like so: 
-![](https://imgur.com/Xn0vzRp.png) 
+1. Go to `localhost:8000/`. You should see a very plain contacts index page
+    - <details><summary>See how it should look</summary><p>
+      
+        ![](https://imgur.com/Xn0vzRp.png) 
+        
+      <p></details>
 1. Go to `localhost:8000/admin` and log in using the username/password you created when making the superuser 
 1. You should now be able to add / delete / edit / read contacts directly from your browser!
     - <details><summary>See an example of how to use the admin panel</summary><p>
