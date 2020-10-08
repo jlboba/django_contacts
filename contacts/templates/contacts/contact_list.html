@@ -1,7 +1,7 @@
 <!-- including the base.html as a boilerplate -->
 {% extends 'contacts/base.html' %} {% block content %}
 <!-- contact list content -->
-<h2>Contacts <a href="">(+)</a></h2>
+<h2>Contacts <a href="{% url 'contact_create' %}">(+)</a></h2>
 <ul>
   {% for contact in contacts %}
   <li>

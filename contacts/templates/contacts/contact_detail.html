@@ -1,6 +1,7 @@
 <!-- including the base.html as a boilerplate -->
 {% extends 'contacts/base.html' %} {% block content %}
 <!-- contact detail content -->
-<h2>{{ contact.name }} <a href="">(edit)</a></h2>
+<h2>{{ contact.name }} <a href="{% url 'contact_edit' pk=contact.pk %}"}>(edit)</a></h2>
 <h4>Age: {{ contact.age }}</h4>
+<a href="{% url 'contact_delete' pk=contact.pk %}">Delete contact</a>
 {% endblock %}
