@@ -104,3 +104,41 @@ To build your app, we're going to be building a virtual environment. In order to
     1. Apply the migration: `python3 manage.py migrate` 
     
 ---
+
+## Set Up for Heroku Deployment 
+
+### In Terminal
+1. Create a heroku app from the root of your project folder, run: `heroku create` 
+    - The above command will randomly generate a name for you, if you want to name your app something specific run: `heroku create urlNameYouWantHere`
+
+### In your Code Editor 
+
+1. Copy the heroku url that was created (without the `https://`), go to your `django_contacts/settings.py` and add it into the `ALLOWED_HOSTS`
+    - e.g. 
+    ![](https://imgur.com/AVlB8kK.png)
+    
+### On the Browser 
+
+1. Go to your heroku dashboard for the heroku project you just created
+1. Click on Configure Add-Ons
+1. Search for Heroku Postgres and add it 
+1. Go to the Settings, Reveal Config Vars, add a config var for SECRET_KEY and anything else you have in your .env file 
+
+### In Terminal
+
+1. `pipenv lock` to ensure your pipfile.lock is up to date
+1. `git add -A`
+1. `git commit -m "heroku deployment"`
+1. `git push heroku master` 
+1. Once it builds successfully, run `heroku run bash` 
+1. While in heroku bash,  apply the migrations to the heroku project by running: `python manage.py migrate` 
+1. Still in heroku bash, create a superuser for the heroku project by running `python manage.py createsuperuser` and follow the prompts
+    - To exit heroku bash, run `exit`
+
+### In Browser 
+
+1. After the migrations finish, you should now be able to open the heroku app in your browser!
+1. Remember that your heroku database is separate from your local database, so there should not be any data on the first load. 
+    - You can add data by logging in to `/admin` with the heroku superuser you created
+    
+---
