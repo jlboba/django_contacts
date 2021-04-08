@@ -10,12 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-import os 
+import os
 import dj_database_url
 
 from pathlib import Path
 
-# .env config 
+# .env config
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
@@ -32,7 +32,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost','hidden-coast-69962.herokuapp.com/']
 
 
 # Application definition
@@ -97,7 +97,7 @@ DATABASES = {
     }
 }
 
-# Updating database when deployed 
+# Updating database when deployed
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
 
