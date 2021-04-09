@@ -12,9 +12,19 @@
     <!-- where all other content will go when this template is extended to other files -->
 
     <header>
-            <h1><a href="{% url 'profile' %}">Benjamin Jack Pitts</a></h1>
-            <h2>Musician</h2>
-          </header><br><br>
+            <h1>Benjamin Jack Pitts</h1>
+        <div class='container'>
+          <div class='profile'>
+            <a href="{% url 'profile' %}">Home</a>
+          </div>
+          <div class='profile'>
+            <a href="{% url 'about' %}">About</a>
+          </div>
+          <div class='profile'>
+            <a href="{% url 'contact_list' %}">Contacts</a>
+          </div>
+        </div>
+    </header><br>
 
 {% block content %}{% endblock %}
 

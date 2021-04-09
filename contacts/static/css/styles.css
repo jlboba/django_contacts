@@ -10,6 +10,10 @@ img {
   border-radius: 10px;
   box-shadow: 15px 15px 10px #090909;
 }
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
 h2 {
   margin-top: 0;
   color: ivory;
@@ -18,7 +22,7 @@ h2 {
 a {
   text-decoration: none;
   color: gold;
-  font-size: 25px;
+  font-size: 30px;
 }
 a:hover {
   color: ivory;
@@ -36,6 +40,7 @@ header {
   align-items: center;
   background: #090909;
   color: ivory;
+  padding: 1rem;
 }
 footer {
   display: flex;
