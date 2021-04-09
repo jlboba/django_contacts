@@ -1,4 +1,66 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: gray;
+
+}
+img {
+  width: 80%;
+  border: 2px solid black;
+  opacity: .8;
+  border-radius: 10px;
+  box-shadow: 15px 15px 10px #090909;
+}
+h2 {
+  margin-top: 0;
+  color: ivory;
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+  color: gold;
+  font-size: 25px;
+}
+a:hover {
+  color: ivory;
+}
+input:hover {
+  background: gold;
+}
+#submit:hover {
+  background: gray;
+  cursor: pointer;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #090909;
+  color: ivory;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #090909;
+  color: ivory;
+  padding: 1.5rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 1rem;
+}
+#me {
+  width: 20%;
 }

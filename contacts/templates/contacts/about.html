@@ -1,0 +1,17 @@
+{% extends 'contacts/base.html' %} {% block content %}
+
+<div class='main'>
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'contact_list' %}">Contacts</a>
+<br><br>
+<img src='https://i.imgur.com/plNrAnM.jpg' id='me'/><br>
+<h4>I’ve worked for companies ranging from small/independent, medium/franchise, to large corporations and can adapt to any type of working environment. I have a well rounded knowledge of frontend languages/backend frameworks and have deployed an [array] of projects to showcase this fluency. I have also collaborated with other software developers on projects and have the ability to learn new languages and concepts.
+
+I have over 8 years of experience in restaurant management. I have successfully launched menus, organized charitable community events and piloted merchandising, marketing and training initiatives. During my tenure in that industry, I was able to continuously grow quarterly sales while keeping team morale at an all time high. My previous supervisor described me as a “dedicated leader that sets a great example with his positive approach to problem solving”. I love overcoming challenges and using my communication skills to maintain a fun, creative, and productive work environment.
+  </h4>
+<br>
+<a href="{% url 'profile' %}">Back to Main</a><br>
+</div><br>
+
+
+{% endblock %}

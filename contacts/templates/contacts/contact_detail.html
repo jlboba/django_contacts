@@ -1,8 +1,11 @@
 <!-- including the base.html as a boilerplate -->
 {% extends 'contacts/base.html' %} {% block content %}
 <!-- contact detail content -->
-<a href="{% url 'contact_list' %}">Go back to contacts</a>
+<div class='main'>
 <h2>{{ contact.name }} <a href="{% url 'contact_edit' pk=contact.pk %}"}>(edit)</a></h2>
 <h4>Age: {{ contact.age }}</h4>
 <a href="{% url 'contact_delete' pk=contact.pk %}">Delete contact</a><br/>
+<a href="{% url 'contact_list' %}">Go back to main</a><br>
+</div>
+
 {% endblock %}
