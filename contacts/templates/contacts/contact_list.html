@@ -2,15 +2,17 @@
 {% extends 'contacts/base.html' %} {% block content %}
 <!-- contact list content -->
 <div class='main'>
-<h2><a href="{% url 'contact_create' %}">Create New (+)</a></h2>
+<h2><a href="{% url 'contact_create' %}">Create New Band profile</a></h2>
+<div class='list'>
 <ul>
   {% for contact in contacts %}
   <li>
     <a href="{% url 'contact_detail' pk=contact.pk %}">{{ contact.name }}</a>
   </li>
   {% endfor %}
-</ul><br><br>
-<br><br>
+</ul>
+</div>
+<br><br><br><br>
 <a href="{% url 'profile' %}">Back to Main</a><br>
 
 </div>

@@ -1,11 +1,23 @@
 <!-- including the base.html as a boilerplate -->
 {% extends 'contacts/base.html' %} {% block content %}
 <!-- contact detail content -->
+
 <div class='main'>
-<h2>{{ contact.name }} <a href="{% url 'contact_edit' pk=contact.pk %}"}>(edit)</a></h2>
-<h4>Age: {{ contact.age }}</h4>
-<a href="{% url 'contact_delete' pk=contact.pk %}">Delete contact</a><br/>
-<a href="{% url 'contact_list' %}">Back to main</a><br>
+<h2>{{ contact.name }} <a href="{% url 'contact_edit' pk=contact.pk %}"}>(edit details)</a></h2>
+<h4>Bio: {{ contact.bio }}</h4>
+<div class='profile'>
+<div class='main'>
+<a href='{{ contact.link }}' target='_blank'><img src='{{ contact.image1 }}' id='album'></a>
+<h4>{{ contact.album1 }}</h4>
+</div>
+<div class='main'>
+<a href='{{ contact.link }}' target='_blank'><img src='{{ contact.image2 }}' id='album'></a>
+<h4>{{ contact.album2 }}</h4>
+</div>
+</div>
+<br><br>
+<a href="{% url 'contact_delete' pk=contact.pk %}">Delete Profile</a><br/>
+<a href="{% url 'contact_list' %}">Back to Bands</a><br>
 </div>
 
 {% endblock %}

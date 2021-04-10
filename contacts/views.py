@@ -23,6 +23,10 @@ def profile(request):
 def about(request):
     return render(request, 'contacts/about.html')
 
+##about
+def contact(request):
+    return render(request, 'contacts/contact.html')
+
 ## new
 def contact_create(request):
     if request.method == 'POST':
