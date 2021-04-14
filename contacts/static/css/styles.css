@@ -12,31 +12,46 @@ img {
 h1 {
   margin: 0;
   font-size: 40px;
+  text-align: center;
 }
 h2 {
   margin-top: 0;
   color: ivory;
+  font-size: 30px;
+}
+h5 {
+  font-size: 15px;
   font-style: italic;
 }
 a {
   text-decoration: none;
   color: gold;
   font-size: 30px;
-  text-align: center;
 }
 a:hover {
   color: ivory;
 }
-ul {
-  text-align: left;
+form {
+  width: 60%;
+  text-align: right;
+}
+button {
+  font-size: 20px;
+  background: #090909;
+}
+input {
+  width: 70%;
 }
 input:hover {
-  background: gold;
+  background: ivory;
 }
-#submit:hover {
-  background: gray;
-  cursor: pointer;
+textarea {
+  width: 70%;
 }
+textarea:hover {
+  background: ivory;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -52,6 +67,10 @@ footer {
   background: #090909;
   color: ivory;
   padding: 1.5rem;
+  text-align: center;
+}
+li {
+  text-align: left;
 }
 .main {
   display: flex;
@@ -76,16 +95,45 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  /* width: 100%; */
+  width: 100%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 #album {
-  width: 50%;
+  width: 80%;
   text-align: center;
-
 }
 #album:hover {
   opacity: .4;
 }
 #me {
   width: 20%;
+}
+#live {
+  width: 60%;
+}
+#submit {
+  color: gold;
+}
+#submit:hover {
+  color: ivory;
+  cursor: pointer;
+}
+#delete:hover {
+  color: red;
+}
+
+
+@media only screen and (max-width: 600px) {
+a {
+  font-size: 14px;
+}
+input, textarea {
+  width: 100%;
+}
 }

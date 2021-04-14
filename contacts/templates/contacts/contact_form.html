@@ -2,10 +2,10 @@
 {% extends 'contacts/base.html' %} {% block content %}
 
 <div class='main'>
-<h2>New Profile</h2>
+
 <form method="POST">
   {% csrf_token %} {{ form.as_p }}
-  <button type="submit" id='submit'>Save</button>
+  <button type="submit" id='submit'>Add New Project</button>
 </form><br>
 <a href="{% url 'contact_list' %}">Back to main</a><br>
 </div>
