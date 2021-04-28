@@ -114,7 +114,7 @@ a.active:hover {
   color: gold;
 }
 #album {
-  width: 70%;
+  width: 40%;
   text-align: center;
 }
 #album:hover {
@@ -125,7 +125,7 @@ a.active:hover {
   margin: 1rem;
 }
 #live {
-  width: 60%;
+  width: 50%;
 }
 #submit {
   color: gold;
