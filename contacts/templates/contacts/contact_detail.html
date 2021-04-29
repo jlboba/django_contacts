@@ -8,7 +8,7 @@
   <img src='{{ contact.liveImage }}' id='live'>
 <h4>{{ contact.bio }}</h4>
 </div><br/>
-<h3>Published material that I contributed to:</h3><br>
+<h3 class='ivory'>Published material that I have contributed to:</h3><br>
 <div class='profile'>
 <div class='main'>
 <a href='{{ contact.link }}' target='_blank'><img src='{{ contact.image1 }}' id='album'></a>
@@ -19,7 +19,7 @@
 <h5>{{ contact.album2 }}</h5>
 </div>
 </div>
-<br><br>
+<br><br><br>
 <button><a href="{% url 'contact_edit' pk=contact.pk %}"}>Edit Details</a></button>
 <button><a href="{% url 'contact_delete' pk=contact.pk %}"  id='delete' >Delete Profile</a></button><br/><br/><br/>
 <a href="{% url 'contact_list' %}">Back to Bands</a><br>
