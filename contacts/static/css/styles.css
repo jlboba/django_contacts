@@ -16,7 +16,7 @@ h1 {
 h2 {
   margin-top: 0;
   color: ivory;
-  font-size: 30px;
+  font-size: 40px;
 }
 h5 {
   font-size: 15px;
@@ -70,6 +70,7 @@ footer {
 }
 li {
   text-align: left;
+  margin: 1rem;
 }
 .main {
   display: flex;
@@ -97,6 +98,7 @@ li {
   justify-content: flex-start;
   width: 100%;
   border: 2px solid #090909;
+  background: #090909;
 }
 .contact {
   display: flex;
@@ -105,7 +107,7 @@ li {
   justify-content: space-between;
   width: 100%;
   border: 2px solid #090909;
-  box-shadow: 10px 10px 5px #090909;
+  background: #090909;
   margin: 0 2rem;
   padding: 1rem;
 }
@@ -114,6 +116,11 @@ li {
   padding: 0 1rem;
   border: 2px solid #090909;
   background: ivory;
+}
+h3 {
+  background: ivory;
+  border: 2px solid #090909;
+  padding: 1rem;
 }
 a.active {
   background: gray;
@@ -157,6 +164,10 @@ a.active:hover {
 #plain-text:hover {
   color: gold;
 }
+#contact-pic {
+  width: 60%;
+  opacity: 1;
+}
 
 @media only screen and (max-width: 600px) {
 a {
@@ -165,5 +176,10 @@ a {
 input, textarea {
   width: 100%;
 }
-
+#live, #album {
+  width: 80%;
+}
+#me {
+  width: 30%;
+}
 }

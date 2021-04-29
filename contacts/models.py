@@ -5,6 +5,7 @@ from django.db import models
 ## Contacts Model
 class Contact(models.Model):
     name = models.CharField(max_length=100)
+
     bio = models.TextField()
     liveImage = models.CharField(max_length=100, blank=True)
     album1 = models.CharField(max_length=100, blank=True)
