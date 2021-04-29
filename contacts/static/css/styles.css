@@ -96,6 +96,7 @@ li {
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
+  border: 2px solid #090909;
 }
 .contact {
   display: flex;
@@ -103,6 +104,16 @@ li {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  border: 2px solid #090909;
+  box-shadow: 10px 10px 5px #090909;
+  margin: 0 2rem;
+  padding: 1rem;
+}
+.about {
+  margin: 0 5rem;
+  padding: 0 1rem;
+  border: 2px solid #090909;
+  background: ivory;
 }
 a.active {
   background: gray;
@@ -116,9 +127,10 @@ a.active:hover {
 #album {
   width: 40%;
   text-align: center;
+  opacity: 1;
 }
 #album:hover {
-  opacity: .4;
+  opacity: .7;
 }
 #me {
   width: 25%;
@@ -126,6 +138,7 @@ a.active:hover {
 }
 #live {
   width: 50%;
+  opacity: 1;
 }
 #submit {
   color: gold;
@@ -137,7 +150,13 @@ a.active:hover {
 #delete:hover {
   color: red;
 }
-
+#plain-text {
+  color: gray;
+  font-size: 16px;
+}
+#plain-text:hover {
+  color: gold;
+}
 
 @media only screen and (max-width: 600px) {
 a {
