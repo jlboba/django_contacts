@@ -3,7 +3,7 @@ body {
     background: gray;
 }
 img {
-  width: 70%;
+  width: 75%;
   opacity: .8;
   border-radius: 10px;
   box-shadow: 10px 10px 5px #090909;
@@ -25,7 +25,7 @@ h5 {
 a {
   text-decoration: none;
   color: gold;
-  font-size: 30px;
+  font-size: 35px;
 }
 a:hover {
   color: ivory;
@@ -68,9 +68,12 @@ footer {
   padding: 1.5rem;
   text-align: center;
 }
+ul {
+  padding-left: 1rem;
+}
 li {
   text-align: left;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 .main {
   display: flex;
@@ -88,7 +91,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 1rem;
+    margin: 0 .6rem;
     padding: .2rem;
 }
 .list {
@@ -108,7 +111,7 @@ li {
   width: 100%;
   border: 2px solid #090909;
   background: #090909;
-  margin: 0 2rem;
+  margin: 0 1rem;
   padding: 1rem;
 }
 .about {
@@ -116,6 +119,7 @@ li {
   padding: 0 1rem;
   border: 2px solid #090909;
   background: ivory;
+  width: 90%;
 }
 h3 {
   background: ivory;
@@ -167,11 +171,12 @@ a.active:hover {
 #contact-pic {
   width: 60%;
   opacity: 1;
+  margin: 0 1rem;
 }
 
 @media only screen and (max-width: 600px) {
 a {
-  font-size: 14px;
+  font-size: 15px;
 }
 input, textarea {
   width: 100%;
@@ -180,6 +185,10 @@ input, textarea {
   width: 80%;
 }
 #me {
-  width: 30%;
+  width: 32%;
+  margin: .5rem;
+}
+form {
+  width: 90%;
 }
 }
