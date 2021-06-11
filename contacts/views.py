@@ -3,10 +3,14 @@ from django.shortcuts import render, redirect
 from .models import Contact
 from .forms import ContactForm
 
+# import statsd
+# c = statsd.StatsClient("statsd.hostedgraphite.com", 8125, prefix="8770573a-2e24-4ad5-9d1f-f69afca83321")
+
 # Create your views here.
 
 ## index
 def contact_list(request):
+    # c.incr("benjaminpitts-musician.contact_list.request", 1)
     contacts = Contact.objects.all()
     return render(request, 'contacts/contact_list.html', { 'contacts': contacts})
 
