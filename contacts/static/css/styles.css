@@ -162,6 +162,11 @@ a.active:hover {
 #delete:hover {
   color: red;
 }
+#plain {
+  color: ivory;
+  background: #090909;
+  font-size: 42px;
+}
 #plain-text {
   color: gray;
   font-size: 20px;
@@ -185,7 +190,7 @@ input, textarea {
 h4 {
   font-size: 16px;
 }
-.name {
+.name, #plain {
   font-size: 32px;
 }
 .profile {

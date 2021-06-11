@@ -14,7 +14,7 @@
     <!-- where all other content will go when this template is extended to other files -->
 
     <header>
-            <h1 class='name'>Benjamin Jack Pitts</h1>
+            <h1 class='name'><a href="{% url 'profile' %}" id='plain'>Benjamin Jack Pitts</a></h1>
         <div class='container'>
           <div class='profile'>
             <a href="{% url 'profile' %}">Home</a>
@@ -34,7 +34,7 @@
 {% block content %}{% endblock %}
 
     <footer>
-    <h4>Built by: <a href='https://benjaminjackpitts.dev/' target='_blank'>Benjamin Jack Pitts </a> 2021</h4></footer>
+    <h4>Built by: <a href='https://benjaminjackpitts.dev/' target='_blank'> Benjamin Jack Pitts </a> 2021</h4></footer>
 
     <script>
 for (var i = 0; i < document.links.length; i++) {
