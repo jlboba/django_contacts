@@ -27,9 +27,13 @@ def profile(request):
 def about(request):
     return render(request, 'contacts/about.html')
 
-##about
+##contact
 def contact(request):
     return render(request, 'contacts/contact.html')
+    
+##portfolio
+def portfolio(request):
+    return render(request, 'contacts/portfolio.html')
 
 ## new
 def contact_create(request):
