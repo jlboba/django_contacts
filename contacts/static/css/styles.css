@@ -1,3 +1,209 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif, Arial;
+    font-size: 20px;
+    background: gray;
+}
+img {
+  width: 80%;
+  opacity: .8;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #090909;
+}
+h1 {
+  margin-top: .5rem;
+  font-size: 42px;
+  text-align: center;
+}
+h2 {
+  margin-top: 0;
+  color: ivory;
+  font-size: 40px;
+}
+h5 {
+  font-size: 15px;
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+  color: gold;
+  font-size: 35px;
+}
+a:hover {
+  color: ivory;
+}
+form {
+  width: 60%;
+  text-align: right;
+}
+button {
+  font-size: 20px;
+  background: #090909;
+}
+input {
+  width: 70%;
+}
+input:hover {
+  background: ivory;
+}
+textarea {
+  width: 70%;
+}
+textarea:hover {
+  background: ivory;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #090909;
+  color: ivory;
+  padding: 1rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #090909;
+  color: ivory;
+  padding: 1.5rem;
+  text-align: center;
+}
+ul {
+  padding-left: 1rem;
+}
+li {
+  text-align: left;
+  margin: 1rem 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 .6rem;
+    padding: 0 1rem;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border: 2px solid #090909;
+  background: #090909;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid #090909;
+  background: #090909;
+  margin: 0 1rem;
+  padding: .5rem;
+}
+.about {
+  margin: 0 5rem;
+  padding: 0 1rem;
+  border: 2px solid #090909;
+  background: ivory;
+  width: 90%;
+}
+h3 {
+  background: ivory;
+  border: 2px solid #090909;
+  padding: 1rem;
+}
+a.active {
+  background: gray;
+  color: ivory;
+  border-radius: 10px;
+  padding: .2rem;
+}
+a.active:hover {
+  color: gold;
+}
+#album {
+  width: 40%;
+  text-align: center;
+  opacity: 1;
+}
+#album:hover {
+  opacity: .7;
+}
+#me {
+  width: 25%;
+  margin: 1rem;
+}
+#live {
+  width: 50%;
+  opacity: 1;
+}
+#submit {
+  color: gold;
+}
+#submit:hover {
+  color: ivory;
+  cursor: pointer;
+}
+#delete:hover {
+  color: red;
+}
+#plain {
+  color: ivory;
+  background: #090909;
+  font-size: 42px;
+}
+#plain-text {
+  color: gray;
+  font-size: 20px;
+}
+#plain-text:hover {
+  color: gold;
+}
+#contact-pic {
+  width: 60%;
+  opacity: 1;
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+a {
+  font-size: 18px;
+}
+input, textarea {
+  width: 100%;
+}
+h4 {
+  font-size: 16px;
+}
+.name, #plain {
+  font-size: 32px;
+}
+.profile {
+  padding: .1rem;
+}
+#live, #album {
+  width: 80%;
+}
+#me {
+  width: 32%;
+  margin: .5rem;
+}
+form {
+  width: 90%;
+}
 }

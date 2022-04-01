@@ -1,9 +1,12 @@
 <!-- tunr/templates/tunr/artist_form.html -->
 {% extends 'contacts/base.html' %} {% block content %}
-<a href="{% url 'contact_list' %}">Go back to contacts</a>
-<h2>New Contact</h2>
+
+<div class='main'>
+<i>Note: Use URL's in the Image, Album, and Link inputs</i>
 <form method="POST">
   {% csrf_token %} {{ form.as_p }}
-  <button type="submit">Save</button>
-</form>
+  <button type="submit" id='submit'>Add/Update</button>
+</form><br>
+<a href="{% url 'contact_list' %}">Back to Portfolio</a><br>
+</div>
 {% endblock %}

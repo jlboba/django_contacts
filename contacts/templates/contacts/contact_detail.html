@@ -1,8 +1,28 @@
 <!-- including the base.html as a boilerplate -->
 {% extends 'contacts/base.html' %} {% block content %}
 <!-- contact detail content -->
-<a href="{% url 'contact_list' %}">Go back to contacts</a>
-<h2>{{ contact.name }} <a href="{% url 'contact_edit' pk=contact.pk %}"}>(edit)</a></h2>
-<h4>Age: {{ contact.age }}</h4>
-<a href="{% url 'contact_delete' pk=contact.pk %}">Delete contact</a><br/>
+
+<div class='main'>
+<h2>{{ contact.name }}</h2>
+<div class='bio'>
+  <img src='{{ contact.liveImage }}' id='live'>
+<h4>{{ contact.bio }}</h4>
+</div><br/>
+<h3 class='ivory'>Published material that I have contributed to:</h3><br>
+<div class='profile'>
+<div class='main'>
+<a href='{{ contact.link }}' target='_blank'><img src='{{ contact.image1 }}' id='album'></a>
+<h5>{{ contact.album1 }}</h5>
+</div>
+<div class='main'>
+<a href='{{ contact.link }}' target='_blank'><img src='{{ contact.image2 }}' id='album'></a>
+<h5>{{ contact.album2 }}</h5>
+</div>
+</div>
+<br><br><br>
+<button><a href="{% url 'contact_edit' pk=contact.pk %}"}>Edit Details</a></button>
+<button><a href="{% url 'contact_delete' pk=contact.pk %}"  id='delete' >Delete Profile</a></button><br/><br/>
+<a href="{% url 'contact_list' %}">Back to Portfolio</a><br>
+</div>
+
 {% endblock %}

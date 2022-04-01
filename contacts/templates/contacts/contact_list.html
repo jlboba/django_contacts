@@ -1,7 +1,9 @@
 <!-- including the base.html as a boilerplate -->
 {% extends 'contacts/base.html' %} {% block content %}
 <!-- contact list content -->
-<h2>Contacts <a href="{% url 'contact_create' %}">(+)</a></h2>
+<div class='main'>
+<h2><a href="{% url 'contact_create' %}">Create New Band Profile</a></h2>
+<div class='list'>
 <ul>
   {% for contact in contacts %}
   <li>
@@ -9,4 +11,9 @@
   </li>
   {% endfor %}
 </ul>
+</div>
+<br><br>
+<a href="{% url 'profile' %}">Back to Main</a><br><br><br><br><br>
+</div>
+
 {% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'contacts/base.html' %} {% block content %}
+
+<div class='main'>
+<br><br>
+<div class='profile'>
+  <img src='https://i.imgur.com/yk6aSam.jpg' id='contact-pic'>
+<div class='contact'>
+  <a href='mailto:benjaminjackpitts@gmail.com' target='_blank'>Email</a>
+  <a href='https://www.facebook.com/ben.pitts.7/' target='_blank'>Facebook</a>
+  <a href='https://www.linkedin.com/in/benjaminjackpitts/' target='_blank'>LinkedIn</a>
+  <a href='https://benjaminjackpitts.dev/' target='_blank'>Website</a>
+  <a href='https://github.com/BenjaminPitts' target='_blank'>GitHub</a>
+  <a href='https://twitter.com/BenjaminJackPi1' target='_blank'>Twitter</a>
+</div>
+</div>
+<br>
+<br>
+<br>
+<a href="{% url 'profile' %}">Back to Main</a><br>
+</div><br>
+
+
+{% endblock %}
